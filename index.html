@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="the_band_3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="the_band_3.js" defer></script>
+    <title>The Band | Home Page</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li class="hidden-nav"><a href="#band">band</a></li>
+                <li class="hidden-nav"><a href="#tour">tour</a></li>
+                <li class="hidden-nav"><a href="#contact">contact</a></li>
+                <li class="more hidden-nav">
+                    <a href="">more<i class="fa fa-caret-down" style="color: white;margin-left: 5px;"></i></a>
+                    <ul class="more-list">
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Extras</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-search">
+            <i class="fa fa-bars" onclick="displayNav()"></i>
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    <div class="home-img" id="home">
+        <img src="https://www.w3schools.com/w3images/la.jpg" alt="">
+        <div class="home-img-text">
+        </div>
+    </div>
+    <div class="band" id="band">
+        <h2 class="heading">The band</h2>
+        <span class="quote">We love music</span>
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <ul>
+            <li>
+                <span>Name</span>
+                <span><img src="https://www.w3schools.com/w3images/bandmember.jpg" alt=""></span>
+            </li>
+            <li>
+                <span>Name</span>
+                <span><img src="https://www.w3schools.com/w3images/bandmember.jpg" alt=""></span>
+            </li>
+            <li>
+                <span>Name</span>
+                <span><img src="https://www.w3schools.com/w3images/bandmember.jpg" alt=""></span>
+            </li>
+        </ul>
+    </div>
+    <div class="tour" id="tour">
+        <h2 class="heading">TOUR DATES</h2>
+        <span class="quote">Remember to book your tickets!</span>
+        <ul class="month-tour">
+            <li>
+                <span>September</span>
+                <span>Sold out</span>
+            </li>
+            <li>
+                <span>October</span>
+                <span>Sold out</span>
+            </li>
+            <li class="three">
+                <span>November</span>
+                <span>3</span>
+            </li>
+        </ul>
+        <ul class="tour-tickets">
+            <li>
+                <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="">
+                <span class="city">New York</span>
+                <span class="date">Fri 27 Nov 2016</span>
+                <span>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span>
+                <div><a href="">Buy Tickets</a></div>
+            </li>
+            <li>
+                <img src="https://www.w3schools.com/w3images/paris.jpg" alt="">
+                <span class="city">Paris</span>
+                <span class="date">Fri 27 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <div><a href="">Buy Tickets</a></div>
+            </li>
+            <li>
+                <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="">
+                <span class="city">San Francisco</span>
+                <span class="date">Fri 27 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <div><a href="">Buy Tickets</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="contact" id="contact">
+        <h2 class="heading">Contact</h2>
+        <span class="quote">Fan? Drop a note!</span>
+        <div class="contact-content">
+            <ul class="in4">
+                <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span> Chicago, US</span>
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span> Phone: +00 151515</span>
+                </li>
+                <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span> Email: mail@mail.com</span>
+                </li>
+            </ul>
+            <div class="form-in4">
+                <div>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <input type="text" placeholder="Message">
+                <button type="button">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-img">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+    </div>
+    <footer>
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-pinterest-p"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Powered by <a href="">w3.css</a></p>
+    </footer>
+</body>
+</html>

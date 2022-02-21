@@ -1,0 +1,418 @@
+:root{
+    --nav-height: 3rem;
+    --nav-font-size: 15px;
+    --icon-size: 16px;
+}
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: Verdana,sans-serif;
+    min-width: 500px;
+}
+a {
+    text-decoration: none;
+    color: #1e272e;
+}
+.nav{
+    background-color: #000;
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.nav-search {
+    font-size: var(--nav-font-size);
+    color: white;
+    padding: calc(var(--nav-height)/3) calc(var(--nav-height)/2);
+    box-sizing: border-box;
+    font-size: var(--icon-size);
+}
+.nav-search:hover {
+    background-color: #ff5e57;
+    cursor: pointer;
+}
+.nav-left > ul{
+    height: var(--nav-height);
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: var(--nav-font-size);
+}
+.nav-left > ul li {
+    display: flex;
+    margin: auto 0;
+    height: var(--nav-height);
+}
+.nav-left > ul li a {
+    text-decoration: none;
+    color: white;
+    padding: calc(var(--nav-height)/3) calc(var(--nav-height)/2);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.nav-left > ul li a:hover {
+    background-color: #b2bec3;
+    color: black;
+}
+.more {
+    position: relative;
+}
+.more a{
+    display: flex;
+}
+.more-list{
+    position: absolute;
+    top: var(--nav-height);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+.more-list li{
+    background-color: #d2dae2;
+}
+.more-list li a{
+    color: #1e272e;
+    width: calc(var(--nav-height)*3.3);
+    font-size: calc(var(--nav-font-size)*0.85);
+    color: #1e272e !important;
+}
+.more-list li a:hover{
+    color: white !important;
+}
+.more:hover .more-list {
+    display: block;
+}
+.home-img{
+    text-align: center;
+}
+.home-img img{
+    width: 100vw;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+.home-img-text{
+    position: relative;
+    color: white;
+    top: -7rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-weight: 500;
+}
+.home-img-text::before{
+    content: "Chicago";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.home-img-text::after{
+    content: "Thank you, Chicago - A night we won't forget.";
+    font-size: .9rem;
+}
+.band{
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 50rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.heading{
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.quote {
+    color: #bfbfbf;
+    font-style: italic;
+}
+.band p{
+    text-align: justify;
+    font-size: .95rem;
+    line-height: 1.3rem;
+}
+
+.band ul {
+    margin: 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+.band ul li{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    justify-content: space-around;
+}
+.band ul li img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tour {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+    color: white;
+    padding-bottom: 7rem;
+    padding-top: 3rem;
+}
+.tour h2{
+    color: white;
+}
+.month-tour {
+    list-style: none;
+    max-width: 50rem;
+    width: 90%;
+    padding: 2rem 0;
+}
+.month-tour li {
+    color: #757575;
+    background-color: white;
+    height: 2.5rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dedede;
+}
+.month-tour li span{
+    font-size: 0.9rem;
+}
+.month-tour li span + span{
+    margin-left: 2rem;
+    color: white;
+    background-color: #f44336;
+    padding: .15rem .5rem;
+}
+
+.three{
+    display: flex;
+    justify-content: space-between;
+}
+.three span + span {
+    background-color: black !important;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.5rem !important;
+    margin-right: 2rem;
+}
+
+.tour-tickets{
+    font-size: .9rem;
+    line-height: 1.5;
+    display: flex;
+    max-width: 50rem;
+    width: 90%;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.tour-tickets li{
+    background-color: white;
+    color: black;
+    width: 30%;
+    min-width: 15rem;
+    min-height: 25rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tour-tickets .city{
+    font-weight: bold;
+}
+.tour-tickets .date{
+    color: #757575;
+}
+.tour-tickets a{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: .4rem 0.7rem;
+}
+.tour-tickets li span,
+.tour-tickets li p,
+.tour-tickets li div{
+    margin: 0 1rem;
+    text-align: left;
+}
+.contact{
+    max-width: 50rem;
+    width: 90%;
+    display: flex;
+    margin: 3rem auto;
+    flex-flow: column;
+    align-items: center;
+}
+.contact-content{
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.in4{
+    flex: 1;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    line-height: 1.8rem;
+    min-width: 250px;
+}
+.in4 li {
+    display: flex;
+    align-items: center;
+}
+.in4 li i{
+    flex: 1;
+}
+.in4 li span{
+    flex: 12;
+}
+.form-in4{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+.form-in4 input,
+.form-in4 button {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 3px;
+}
+.form-in4 > input{
+    display: flex;
+    align-self: stretch;
+}
+.form-in4 button{
+    background-color: #000;
+    color: white;
+    border: none;
+    width: 80px;
+    text-transform: uppercase;
+}
+.form-in4 > div{
+    display: flex;
+    justify-content: space-between;
+}
+.form-in4 > div input{
+    flex: 1;
+}
+.footer-img{
+    text-align: center;
+}
+.footer-img img{
+    max-height: 1080px;
+    width: 100vw;
+    max-width: 1920px;
+}
+footer{
+    margin: 5rem 0;
+    text-align: center;
+    font-size: 1.45rem;
+    color: #757575;
+}
+footer p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #757575;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.nav-search .fa-bars{
+    display: none;
+}
+
+@media(max-width: 820px){
+    :root{
+        --nav-height: 5rem;
+        --nav-font-size: 20px;
+        --icon-size: 25px;
+    }
+    .nav-search .fa-bars{
+        display: block;
+    }
+    .nav-search .fa-search,
+    .hidden-nav {
+        display: none !important;
+        transition: all 2s linear;
+    }
+    .home-img-text{
+        display: none;
+    }
+    .band ul{
+        flex-flow: column !important;
+        align-items: center;
+        width: 100%;
+    }
+    .band ul li{
+        width: 100% !important;
+        margin: 8rem 0;
+    }
+    .band ul li img{
+        width: 25rem;
+    }
+    .month-tour{
+        width: 60%;
+        min-width: 15rem;
+    }
+    .tour-tickets {
+        justify-content: center;
+        width: 60%;
+        min-width: 15rem;
+    }
+    .tour-tickets li {
+        width: 100%;
+        min-height: 35rem;
+        font-size: 1.3rem;
+    }
+    .contact-content{
+        flex-flow: column;
+    }
+    .in4{
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-in4 div{
+        width: 100%;
+    }
+}
+
+.nav-left.mobile > ul{
+    flex-flow: column;
+}
+.nav-left.mobile .hidden-nav{
+    display: block !important;
+    width: 100vw;
+    background-color: #000;
+    transition: all 2s linear;
+}
+.nav-search.mobile{
+    position: relative;
+    left: -7.4rem;
+}
+.nav-search.mobile:hover{
+    background-color: black;
+}
